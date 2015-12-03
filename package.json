@@ -1,5 +1,5 @@
 {
-  "name": "AvenirApp",
+  "name": "vscode-es6-hapi-mongoose-boiler",
   "version": "0.0.1",
   "devDependencies": {
     "babel": "*",
@@ -15,7 +15,6 @@
   "main": "lib/app.js",
   "dependencies": {
     "hapi": "^11.1.0",
-    "mongoose": "^4.2.5",
-    "soap": "^0.11.0"
+    "mongoose": "^4.2.5"
   }
 }
