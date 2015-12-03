@@ -1,9 +1,6 @@
 var Mongoose = require('mongoose');  
 var Config = require('./config');
 
-//load database
-// Mongoose.connect('mongodb://localhost/test');
-
 var db = Mongoose.connection;
 Mongoose.connect('mongodb://' + Config.mongo.url + '/' + Config.mongo.database);  
 
