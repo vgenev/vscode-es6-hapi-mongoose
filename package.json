@@ -5,15 +5,15 @@
     "babel": "*",
     "tsd": "*"
   },
-  "eslintConfig" : {
+  "eslintConfig": {
     "parser": "babel-eslint",
     "rules": {
-    "strict": 0
+      "strict": 0
     }
   },
-
   "main": "lib/app.js",
   "dependencies": {
+    "eslint": "^1.10.3",
     "hapi": "^11.1.0",
     "mongoose": "^4.2.5"
   }
