@@ -1,0 +1,52 @@
+//POST REQUST OT NL KAM Avenir:
+//POST parametar: import_json
+[
+    {
+       "TRANSACTION_TYPE" : "BET_ACCEPTED|PAID_WIN|ANULATION",
+       "USERNAME" : "STRING32",
+       "TRANSACTION_DESCR" : "STRING128",
+       "MONEY_AMOUNT" : "+/-decimal(20,2)",
+       "TRANSACTION_UNIQUE_ID" : "SHA1_SUM# - 40 Bytes",
+       "STORNO_UNIQUE_ID": "SHA1_SUM_OF_BET_ACCEPTED_OPERATION_TO_ANULATE",
+       "EXT_POS_ID" : "Avenir_9999"
+     },
+     {
+        "TRANSACTION_TYPE" : "BET_ACCEPTED|PAID_WIN|ANULATION",
+        "USERNAME" : "STRING32",
+        "TRANSACTION_DESCR" : "STRING128",
+        "MONEY_AMOUNT" : "+/-decimal(20,2)",
+        "TRANSACTION_UNIQUE_ID" : "SHA1_SUM#2 - 40 Bytes",
+        "STORNO_UNIQUE_ID": "SHA1_SUM_OF_BET_ACCEPTED_OPERATION_TO_ANULATE",
+        "EXT_POS_ID" : "Avenir_9999" 
+     },
+     {
+        "TRANSACTION_TYPE" : "BET_ACCEPTED|PAID_WIN|ANULATION",
+        "USERNAME" : "STRING32",
+        "TRANSACTION_DESCR" : "STRING128",
+        "MONEY_AMOUNT" : "+/-decimal(20,2)",
+        "TRANSACTION_UNIQUE_ID" : "SHA1_SUM#1 - 40 Bytes",
+        "STORNO_UNIQUE_ID": "SHA1_SUM_OF_BET_ACCEPTED_OPERATION_TO_ANULATE",
+        "EXT_POS_ID" : "Avenir_9999" ,
+     }
+  ]
+
+
+//Otgovor ot Avenir kam NL v body-to na sastata HTTP sessia:
+//HTTP Responce body:
+  {
+     "SHA1_SUM#2 - 40 Bytes" : {
+        "STATUS" : "OK|FAILED",
+        "TRANSACTION_UNIQUE_ID" : "SHA1_SUM#2 - 40 Bytes",
+        "FAIL_TYPE" : "TEMPORARY|PERMANENT"
+     },
+     "SHA1_SUM#3 - 40 Bytes" : {
+        "STATUS" : "OK|FAILED",
+        "TRANSACTION_UNIQUE_ID" : "SHA1_SUM#3 - 40 Bytes",
+        "FAIL_TYPE" : "TEMPORARY|PERMANENT"
+     },
+     "SHA1_SUM#1 - 40 Bytes" : {
+        "STATUS" : "OK|FAILED",
+        "TRANSACTION_UNIQUE_ID" : "SHA1_SUM#1 - 40 Bytes",
+        "FAIL_TYPE" : "TEMPORARY|PERMANENT"
+     }
+  }

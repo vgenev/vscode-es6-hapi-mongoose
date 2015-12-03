@@ -1,9 +1,21 @@
 {
-    "name": "VSCode_ES6",
-    "version": "0.0.1",
-    "devDependencies": {
-        "babel": "*",
-        "tsd": "*"
-    },
-    "main": "lib/app.js"
+  "name": "AvenirApp",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel": "*",
+    "tsd": "*"
+  },
+  "eslintConfig" : {
+    "parser": "babel-eslint",
+    "rules": {
+    "strict": 0
+    }
+  },
+
+  "main": "lib/app.js",
+  "dependencies": {
+    "hapi": "^11.1.0",
+    "mongoose": "^4.2.5",
+    "soap": "^0.11.0"
+  }
 }
