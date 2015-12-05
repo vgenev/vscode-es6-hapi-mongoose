@@ -1,6 +1,7 @@
 'use strict'; 
 
-import * as Hapi from 'hapi';
+//import * as Hapi from 'hapi';
+const Hapi = require('hapi');
 const Database = require('./database').db;
 
 const server = new Hapi.Server(); 
