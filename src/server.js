@@ -3,6 +3,7 @@
 //import * as Hapi from 'hapi';
 const Hapi = require('hapi');
 const Database = require('./database').db;
+const Handler = require('./lib/handles');
 
 const server = new Hapi.Server(); 
 
@@ -15,9 +16,7 @@ server.connection({
 server.route({
     method: 'GET',
     path: '/',
-    handler: ( (request, reply) => {
-        reply('Hello, world!');
-    })
+    handler: Handler.rootHandler
 });
 
 server.start((err) => {
